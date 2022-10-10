@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <!-- <link rel="stylesheet" media="(prefers-color-scheme: light" href="css/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark" href="css/dark.css">
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script> -->
+
+    <title>WaDoS Desarrollador</title>
+</head>
+<body>
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>WaDoS</h1>
+                    <nav id="nav" class="nav-menu">
+                        <ul id="links" class="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+
+                    </nav>
+
+                    <!-- <dark-mode-toggle id="dark-mode-toggle-1" legend="" apparence="toggle" dark="Dark" light="Light" remember="Recordar"></dark-mode-toggle> -->
+
+                    <!-- Iconos de las redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/wa-dominguez" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href="https://facebook.com/wdominguezs" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://wa.me/+56956024319" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:wa_dominguez@yahoo.es?Subject=Propuesta%20de%20Trabajo%20desde%20Sitio%20Web" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-instagram-square"></i></a> -->
+                        
+                    </div>
+
+                    <div class="lenguaje">
+                        <div class="lenguaje-selected">
+                            ln-ES
+                        </div>
+                        <ul>
+                            <li><a href="#" class="es">Español</a></li>
+                            <li><a href="#" class="en">English</a></li>
+                            <!-- <li><a href="#" class="br">Portugês</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- Iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p id="bienvenida" class="bienvenida">Bienvenidos</p>
+                <h2 id="nombre">Soy <span>WaDoS</span>, Ingeniero Informático</h2>
+                <p id="titulo" class="descripcion">Diseño y codifico lo simple de la vida y me gusta lo que hago.</p>
+                <a id="ir" href="#portafolio">Ir al Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/mifoto4.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p id="aboutme" class="titulo-seccion">Sobre Mi</p>
+            <h2 id="minombre">Hola, soy <span>Wilton Domínguez</span></h2>
+            <h3 id="ing">Ingeniero Informático - Desarrollador Web</h3>
+            <p id="txt1">Desde que comencé mi viaje como desarrollador y relator, he realizado trabajos para algunas empresas del país y he colaborado con personas talentosas para crear productos digitales tanto para comercio como personales.</p>
+            <p id="txt2">Soy naturalmente curioso, siempre trabajo y me capacito para mejorar mis habilidades, y me encuentro capaz de enfrentar nuevos desafíos.</p>
+            <div class="cv">
+                <a href="cv/CV Wilton Domínguez S.pdf" target="_blank" id="cv">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h3 class="titulo-servicios">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-regular fa-window-restore"></i></span>
+                <h4 id="vb6">Desarrolador VB 6.0</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="vb-det">Mis conocimientos como Informático iniciaron con MS Visual Basic 6.0 y SQL.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-microsoft"></i></i></span>
+                <h4 id="relator">Relator Informática</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="relator-det">Realizo cursos de computación, Ofimática (Word, Excel, PowerPoint) en todos los niveles.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4 id="dev">Desarrollo de Sitios WEB</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="dev-det">Además he diseñado pequeños sitios basados en HTML, con CSS, JavaScript y MySql.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4 id="host">Dominios y Hosting</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="host-det">Junto con el desarrollo de sitios WEB, además realizo el levantamiento de los mismos, tanto con el dominio, como el hosting.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-network-wired"></i></span>
+                <h4 id="net">Asesorías y Redes</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="net-det">Instalación y configuración de redes locales, y asesorías computacionales.  </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4 id="mant">Mantención</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!-- <li>Web</li>
+                    <li>Gráficos</li>
+                    <li>SEO</li> -->
+                </ul>
+                <p id="mant-det">Armado de Computadores, mantención y reparación de notebook's y Pc's.</p>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <div class="contenedor-skills" id="skills">
+        <h3 id="habilidades">HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p id="skill-html"><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">55%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p id="skill-js"><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p id="skill-php"><span class="lista"></span>PHP</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="php" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p id="skill-db"><span class="lista"></span>Base de Datos (SQL & MySQL)</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Visual Basic 6.0 & SQL</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="vb" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="portafolio">
+        <h3 id="misproy" class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/boda.jpg" alt="">
+                <div class="info">
+                    <a href="http://miboda.live" target="_blank">
+                    <h4 id="proy01">.:: Web de novios ::.</h4>
+                    <p id="clickhere">Pincha acá para ver más</p></a>
+                </div>
+            </div>
+            <!-- <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section id="contacto">
+        <h3 id="contactme" class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-form">
+            <form action="enviar.php" method="post">
+                <div class="fila mitad">
+                    <input type="text" id="txt-nombre" name="nombre" placeholder="Nombre Completo" class="input-mitad"  required="required">
+                    <input type="text" id="txt-email" name="email" placeholder="Correo electrónico" class="input-mitad"  required="required">
+                </div>
+
+                <div class="fila">
+                    <input type="text" id="txt-tema" name="tema" placeholder="Tema..." class="input-full" required="required">
+                </div>
+                <div class="fila">
+                    <textarea style="height: 200px;" id="txt-mensaje" name="mensaje" cols="30" rows="5" placeholder="Tu Mensaje..." class="input-full" required="required"></textarea>
+                    <!-- <input type="text" style="height: 100px;" id="txt-mensaje" name="mensaje" placeholder="Tu Mensaje..." class="input-full" required="required"> -->
+                </div>
+                <input id="btn-enviar" type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Seccion Footer -->
+    <footer>
+        <p id="derechos">Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/wa-dominguez" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <a href="https://facebook.com/wdominguezs" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
+            <a href="https://wa.me/+56956024319" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:wa_dominguez@yahoo.es?Subject=Propuesta%20de%20Trabajo%20desde%20Sitio%20Web" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+            <!-- <a href=""><i class="fa-brands fa-instagram-square"></i></a> -->
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
